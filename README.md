@@ -69,11 +69,13 @@ sudo apt install -y ffmpeg
 sudo apt update
 # install postgresql and postgresql-contrib
 sudo apt install postgresql postgresql-contrib
+```
+Create new database
+```shell
 # switch usr
 sudo su - postgres
 psql
 ```
-Create new database
 ```psql
        #  用户名↓                # 密码↓
  CREATE USER uname WITH PASSWORD 'zhenxun';      # 创建用户
