@@ -57,7 +57,7 @@ conda create -n name python==<version>
 ## 4 install go-cqhttp
 ```shell
 wget https://github.com/Mrs4s/go-cqhttp/releases/download/v1.0.0-rc1/go-cqhttp_linux_amd64.tar.gz
-tar -xczf go-cqhttp_linux_amd64.tar.gz
+tar -zxvf go-cqhttp_linux_amd64.tar.gz
 cd go-cqhttp_linux_amd64.tar.gz
 # run go-cqhttp first time.
 ./go-cqhttp
