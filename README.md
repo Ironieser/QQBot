@@ -1,6 +1,18 @@
 # Installation guide of zhenxun bot
+## 0 Introduction
+I installed the bot on the Tencent Cloud.
+```
+# Too expensive! Not recommended!
+System: Ubuntu Server 18.04.1 LTS 64bit
+location: shanghai
+CPU: 2 core
+mem: 2GB
+bandwidth: 4Mbps
+Price: 50 yuan per month
+```
+
 ## 1 Create new QQ
-3059509092
+Such as my new bot: 3059509092
 ## 2 Create new vps and connect by ssh
 If use Ubuntu, we need to adjust the config of ssh.
 ```shell
