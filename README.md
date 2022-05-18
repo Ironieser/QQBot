@@ -66,7 +66,7 @@ cd go-cqhttp_linux_amd64.tar.gz
 Then modify the comfig.yml as shown blow.
 ```config
 uin:your bot qq
-# need open 8080 port.
+# port 8080 needs to be opened in the firewall.
 universal: ws://127.0.0.1:8080/onebot/v11/ws/
 # restart go-cqhttp
 ./go-cqhttp
