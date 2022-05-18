@@ -96,7 +96,7 @@ psql
 ```
 ## 6 install zhenxun bot
 ```shell
-git clone -b main http://github.com/HibiKier/zhenxun_bot.git
+git clone -b main https://github.com/Ironieser/zhenxun_bot.git
 cd zhenxun_bot
 pip3 install poetry     
 poetry install          
