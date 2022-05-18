@@ -1,4 +1,4 @@
-# QQBot
+# Installation guide of zhenxun bot
 ## 1 Create new QQ
 3059509092
 ## 2 Create new vps and connect by ssh
@@ -58,4 +58,61 @@ uin:your bot qq
 universal: ws://127.0.0.1:8080/onebot/v11/ws/
 # restart go-cqhttp
 ./go-cqhttp
+```
+need another package for audio item
+```shell
+sudo apt install -y ffmpeg
+```
+## 5 install Postgresql database
+```shell
+# first update the apt tool
+sudo apt update
+# install postgresql and postgresql-contrib
+sudo apt install postgresql postgresql-contrib
+# switch usr
+sudo su - postgres
+psql
+```
+Create new database
+```psql
+       #  用户名↓                # 密码↓
+ CREATE USER uname WITH PASSWORD 'zhenxun';      # 创建用户
+         # 数据库名称↓       所有者↓
+ CREATE DATABASE testdb OWNER uname;             # 创建数据库
+```
+## 6 install zhenxun bot
+```shell
+git clone -b main http://github.com/HibiKier/zhenxun_bot.git
+cd zhenxun_bot
+pip3 install poetry     
+poetry install          
+
+# if use conda virtual env , dont need to do.
+poetry shell            
+
+## playwright install chromiuw which is the headless browser.
+playwright install chromium
+playwright install-deps chromium
+```
+configure the super root
+```python
+vim .env.dev 
+# add qq of super user
+SUPERUSERS=["your qq"]
+```
+```shell
+vim configs/config.py
+```
+```python
+bind: str = ""  
+sql_name: str = "postgresql"
+user: str = "uname"
+password: str = "zhenxun"
+address: str = "127.0.0.1"
+port: str = "5432"
+database: str = "testdb"
+```
+## 7 run bot
+```shell
+python3 bot.py
 ```
