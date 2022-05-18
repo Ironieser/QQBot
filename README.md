@@ -130,3 +130,4 @@ database: str = "testdb"
 ```shell
 python3 bot.py
 ```
+## 8 screen
