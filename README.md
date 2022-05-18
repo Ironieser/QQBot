@@ -14,18 +14,18 @@ Price: 50 yuan per month
 ## 1 Create new QQ
 Such as my new bot: 3059509092
 ## 2 Create new vps and connect by ssh
-If use Ubuntu, we need to adjust the config of ssh.
+Add one new port for ssh because my college's firewall bans the 22 port.
 ```shell
 vim /etc/ssh/sshd_config
+# Add new port
+Port 40230
 ```
-Change the port of ssh to connect because my college's firewall bans the 22 port.
-
-Ubuntu use root to connect the vps.
-
+If use Ubuntu, we need to adjust the config of ssh becuase the default user is not root.
 First change the password.
 ```shell
 sudo passwd root
 ```
+Then revise the config of sshd.
 ```shell
 sudo vi /etc/ssh/sshd_config 
 ```
