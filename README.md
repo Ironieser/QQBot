@@ -18,7 +18,7 @@ If use Ubuntu, we need to adjust the config of ssh.
 ```shell
 vim /etc/ssh/sshd_config
 ```
-Change the port of ssh to connect in college because the firewall bans the 22 port.
+Change the port of ssh to connect because my college's firewall bans the 22 port.
 
 Ubuntu use root to connect the vps.
 
