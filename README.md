@@ -22,3 +22,7 @@ To
 PermitRootLogin yes
 PasswordAuthentication yes
 ```
+At last
+```
+sudo service ssh restart
+```
